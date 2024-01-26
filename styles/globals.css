@@ -2,6 +2,47 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  line-height: 150%; /* 27px */
+  scrollbar-gutter: stable;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -19,7 +60,7 @@
 body {
   color: white;
   background: #1e1e1e;
- 
+
 }
 
 @layer utilities {

@@ -1,0 +1,46 @@
+.navigation {
+    display: flex;
+    align-self: stretch;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.contact {
+    display: flex;
+    padding: 16px 24px;
+    border-radius: 10px;
+    border: 1px solid var(--Grey-15, #262626);
+    background: var(--Grey-08, #141414);
+
+}
+
+.contact span {
+    align-items: center;
+}
+
+.navItem {
+    display: flex;
+    padding: 14px 24px;
+    align-items: flex-start;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    transition: border 0.2s, background 0.2s;
+}
+
+.navItem:hover {
+
+    border: 1px solid var(--Grey-15, #262626);
+    background: var(--Grey-08, #141414);
+}
+
+.activeNavItem {
+
+    border: 1px solid var(--Grey-15, #262626);
+    background: var(--Grey-08, #141414);
+}
