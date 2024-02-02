@@ -1,0 +1,11 @@
+.contact {
+    display: flex;
+    padding: 16px 24px;
+    border-radius: 10px;
+    border: 1px solid var(--Grey-15, #262626);
+    background: var(--Grey-08, #141414);
+}
+
+.contact span {
+    align-items: center;
+}

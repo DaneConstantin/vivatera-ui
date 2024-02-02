@@ -3,39 +3,16 @@
 @tailwind utilities;
 
 * {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  box-sizing: border-box;
-  line-height: 150%; /* 27px */
-  scrollbar-gutter: stable;
+  line-height: 150%;
+  /* 27px */
+
 }
 
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 
-}
-
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ol,
-ul {
-  margin: 0;
-  padding: 0;
-  font-weight: normal;
-}
-
-ol,
-ul {
-  list-style: none;
 }
 
 img {
@@ -67,4 +44,13 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.button {
+  display: flex;
+  padding: 18px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 10px;
 }
