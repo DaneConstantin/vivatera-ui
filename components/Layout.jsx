@@ -1,7 +1,7 @@
-import { Inter } from "next/font/google";
+import { Urbanist } from "next/font/google";
 import Nav from "./Nav";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Urbanist({ subsets: ["latin"] });
 
 export const metadata = {
   title: "VivaTera | Real Estate Business App",
