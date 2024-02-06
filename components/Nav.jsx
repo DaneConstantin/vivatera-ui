@@ -3,14 +3,16 @@ import Link from 'next/link';
 import nav from "../styles/nav.module.css";
 import { useRouter } from 'next/router';
 import Container from './Container';
+import Image from 'next/image';
 
 const Logo = () => {
     return (
         <div>
             <Link href="/">
-                <img
+                <Image
                     className="h-[48px]"
                     src="/vivaterra-logo.png"
+                    width={160}
                     height={48}
                     alt="VivaTerra Logo"
                 />
@@ -49,7 +51,7 @@ const ContactButton = () => {
 export default function Nav() {
 
     return (
-        <Container>
+        <Container className="px-8 lg:px-0">
             <div className="w-full">
                 <nav
                     className={nav.navigation}>
