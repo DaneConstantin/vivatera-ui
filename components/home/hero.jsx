@@ -31,7 +31,7 @@ export default function Hero() {
     <section className="w-full relative">
       <div className="bg-[url('/herobg.png')] w-full h-[814px] absolute opacity-10 z-0"></div>
 
-      <Container className="flex align-center w-full h-auto flex-col-reverse lg:flex-row">
+      <Container className="px-4 lg:px-0 flex align-center w-full h-auto flex-col-reverse lg:flex-row">
         <div className="flex items-center xl:items-start justify-center w-full xl:w-6/12 flex-col py-8 xl:py-20 z-10 mx-auto">
           <h1 className="capitalize mb-4 text-3xl text-dark xl:text-4xl 2xl:text-6xl font-semibold leading-normal xl:leading-relaxed 2xl:leading-relaxed text-center 2xl:text-left">
             Discover Your Dream Property with VivaTerra
