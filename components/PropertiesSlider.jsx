@@ -7,7 +7,7 @@ export default function PropertiesSlider({ properties }) {
 
     const [pageIndex, setPageIndex] = useState(1);
 
-    const { data } = useSWR(`${process.env.NEXT_PUBLIC_STRAPI_URL}/properties?pagination[page]=${pageIndex}&pagination[pageSize]=2`, fetcher, {
+    const { data } = useSWR(`${process.env.NEXT_PUBLIC_STRAPI_URL}/api/properties?pagination[page]=${pageIndex}&pagination[pageSize]=3&populate=*`, fetcher, {
         fallbackData: properties
     })
 
@@ -48,7 +48,7 @@ export default function PropertiesSlider({ properties }) {
 
 export async function getStaticProps() {
     const getProperties = await fetcher(
-        `${process.env.NEXT_PUBLIC_STRAPI_URL}/properties?pagination[page]=1&pagination[pageSize]=2`
+        `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/properties?pagination[page]=1&pagination[pageSize]=3&populate=*`
     );
     console.log(getProperties);
     return {
