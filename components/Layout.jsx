@@ -1,5 +1,7 @@
 import { Urbanist } from "next/font/google";
 import Nav from "./Nav";
+import Footer from "./footer/Footer";
+import CTA from "./CTA";
 
 const inter = Urbanist({ subsets: ["latin"] });
 
@@ -11,10 +13,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <>
-      <Nav />
-      <main className={inter.className}>
-
+      <main className={inter.className + " bg-[#141414]"}>
+        <Nav />
         {children}
+        <CTA />
+        <Footer />
       </main >
     </>
 

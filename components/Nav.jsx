@@ -10,7 +10,7 @@ export const Logo = () => {
         <div>
             <Link href="/">
                 <Image
-                    className="h-[48px]"
+                    className=" xl:h-[48px]"
                     src="/vivaterra-logo.png"
                     width={160}
                     height={48}
@@ -51,8 +51,9 @@ const ContactButton = () => {
 export default function Nav() {
 
     return (
-        <Container className="px-8 lg:px-0">
-            <div className="w-full">
+
+        <div className="w-full bg-[#1A1A1A]">
+            <Container className="px-8 lg:px-0">
                 <nav
                     className={nav.navigation}>
                     <Logo />
@@ -88,7 +89,8 @@ export default function Nav() {
                     <ContactButton />
 
                 </nav>
-            </div>
-        </Container>
+            </Container>
+        </div>
+
     );
 };

@@ -5,6 +5,23 @@ const Property = ({ property }) => {
 
     return (
         <Layout>
+            <div className="container w-80">
+                {property &&
+                    property.attributes.photos.data.map((property) => {
+                        return (
+                            <>
+                                <img key={property.id}
+                                    src={`${process.env.NEXT_PUBLIC_STRAPI_URL}${property.attributes.url}`}
+                                    alt=""
+                                    className="w-full h-full object-cover aspect-w-10 aspect-h-23 rounded-xl"
+                                />
+                            </>
+                        )
+                    })}
+
+
+            </div >
+
             <h1 className="text-5xl md:text-6xl font-extrabold leading-tighter mb-4">
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400 py-2">
                     {property.attributes.name}
@@ -21,7 +38,7 @@ const Property = ({ property }) => {
                     {property.attributes.PropertyType}
                 </span>
             </h2>
-        </Layout>
+        </Layout >
 
 
     );
@@ -31,9 +48,9 @@ const Property = ({ property }) => {
 export async function getServerSideProps({ params }) {
     const { slug } = params;
     const getProperty = await fetcher(
-        `${process.env.NEXT_PUBLIC_STRAPI_URL}/slugify/slugs/property/${slug}`
+        `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/slugify/slugs/property/${slug}?populate=*`
     );
-    console.log(getProperty);
+    console.log(getProperty + "hey");
     return {
         props: {
             property: getProperty.data,
