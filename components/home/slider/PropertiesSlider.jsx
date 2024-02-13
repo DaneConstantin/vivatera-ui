@@ -26,7 +26,7 @@ export default function PropertiesSlider({ properties }) {
 
     return (
 
-        <section className="px-8 md:px-0 flex flex-col items-center justify-between pt-6">
+        <section className="px-8 md:px-0 flex flex-col items-center justify-between pt-6 pb-20">
 
             <Cards propertiesListed={data} />
 
@@ -34,8 +34,8 @@ export default function PropertiesSlider({ properties }) {
             {/* pagination */}
             <div className="mt-8 border-t border-[#262626] w-full pt-4 flex justify-between">
                 <span>
-                    {`${pageIndex} of ${data && data.meta.pagination.pageCount
-                        }`}
+                    {`${pageIndex}`}<span className="text-[#999]">{` of ${data && data.meta.pagination.pageCount
+                        }`}</span>
                 </span>
                 <div className="flex no-wrap gap-2.5">
                     <button

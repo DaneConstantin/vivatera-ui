@@ -54,3 +54,17 @@ body {
   gap: 8px;
   border-radius: 8px;
 }
+
+.abstract-bg {
+  background-image: url("/abstract_CTA_left.png"), url("/abstract_CTA_right.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom left, bottom right;
+}
+
+@media screen and (max-width: 728px) {
+  .abstract-bg {
+    background-image: url("/abstract_CTA_left.png");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+  }
+}

@@ -18,7 +18,7 @@ const SingleCard = ({
   return (
     <>
 
-      <div className="overflow-hidden rounded-lg p-5 md:p-7 lg:p-8 xl:p-10 flex flex-col gap-4 md:gap-6 xl:gap-8">
+      <div className="rounded-lg p-5 md:p-7 lg:p-8 xl:p-10 flex flex-col gap-4 md:gap-6 xl:gap-8 min-h-full justify-between">
         <img
           src={`${process.env.NEXT_PUBLIC_STRAPI_URL}${image}`}
           alt=""
