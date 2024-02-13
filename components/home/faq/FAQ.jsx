@@ -1,15 +1,15 @@
 import { fetcher } from "../../../lib/api";
-import Cards from './Cards';
+
 import useSWR from "swr";
 import { useState, useEffect } from "react";
 import { IoMdArrowForward, IoMdArrowBack } from "react-icons/io";
+import QuestionCards from "./QuestionCards";
 
-export default function PropertiesSlider({ properties }) {
-
-    const [pageIndex, setPageIndex] = useState(1);
+export default function FAQSlider({questions}) {
+  const [pageIndex, setPageIndex] = useState(1);
     const [pageSize, setPageSize] = useState(3);
-    const { data } = useSWR(`${process.env.NEXT_PUBLIC_STRAPI_URL}/api/properties?pagination[page]=${pageIndex}&pagination[pageSize]=${pageSize}&populate=*`, fetcher, {
-        fallbackData: properties
+    const { data } = useSWR(`${process.env.NEXT_PUBLIC_STRAPI_URL}/api/faqs?pagination[page]=${pageIndex}&pagination[pageSize]=${pageSize}&populate=*`, fetcher, {
+        fallbackData: questions
     })
 
     useEffect(() => {
@@ -28,7 +28,7 @@ export default function PropertiesSlider({ properties }) {
 
         <section className="px-8 md:px-0 flex flex-col items-center justify-between pt-6">
 
-            <Cards propertiesListed={data} />
+            <QuestionCards questions={data} />
 
 
             {/* pagination */}
@@ -70,16 +70,15 @@ export default function PropertiesSlider({ properties }) {
 
     );
 }
-
 export async function getStaticProps() {
-    const getProperties = await fetcher(
-        `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/properties?pagination[page]=1&pagination[pageSize]=${pageSize}&populate=*`
-    );
-    console.log(getProperties);
-    return {
-        props: {
-            properties: getProperties,
-        },
-    };
+  const getQuestions = await fetcher(
+      `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/properties?pagination[page]=1&pagination[pageSize]=${pageSize}&populate=*`
+  );
+  console.log(getQuestions);
+  return {
+      props: {
+          questions: getQuestions,
+      },
+  };
 
 }
