@@ -2,7 +2,7 @@ import Hero from '@/components/home/hero';
 import Layout from '../components/Layout';
 import Services from '@/components/home/services';
 import SectionHeader from '@/components/SectionHeader';
-import PropertiesList from '../components/PropertiesSlider';
+import PropertiesList from '../components/home/slider/PropertiesSlider';
 
 
 export default function Home() {

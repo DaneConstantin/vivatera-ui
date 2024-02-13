@@ -1,5 +1,5 @@
 import Image from "next/image";
-import BrowseProperties from "../BrowseProperties";
+import BrowseProperties from "./BrowseProperties";
 import Link from "next/link";
 import Container from "../Container";
 
