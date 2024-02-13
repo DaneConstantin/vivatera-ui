@@ -5,7 +5,7 @@ import { useRouter } from 'next/router';
 import Container from './Container';
 import Image from 'next/image';
 
-const Logo = () => {
+export const Logo = () => {
     return (
         <div>
             <Link href="/">

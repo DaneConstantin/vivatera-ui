@@ -5,6 +5,7 @@ import SectionHeader from '@/components/SectionHeader';
 import PropertiesSlider from '../components/home/slider/PropertiesSlider';
 import FAQSlider from '@/components/home/faq/FAQ';
 import CTA from '@/components/CTA';
+import Footer from '@/components/footer/Footer';
 
 
 export default function Home() {
@@ -22,6 +23,7 @@ export default function Home() {
           <FAQSlider />
         </section>
         <CTA />
+        <Footer />
       </main>
     </Layout>
   );
