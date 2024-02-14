@@ -19,9 +19,7 @@ const HeroPhoto = () => {
         src="/heroimg.png"
         fill
         alt="Hero Illustration"
-        objectFit="contain"
-
-      />
+        />
     </div>
   )
 }
