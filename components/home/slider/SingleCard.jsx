@@ -20,7 +20,7 @@ const SingleCard = ({
 
       <div className="rounded-lg p-5 md:p-7 lg:p-8 xl:p-10 flex flex-col gap-4 md:gap-6 xl:gap-8 min-h-full justify-between">
         <img
-          src={`${process.env.NEXT_PUBLIC_STRAPI_URL}${image}`}
+          src={image}
           alt=""
           className="w-full h-full object-cover aspect-w-10 aspect-h-23 rounded-xl"
 
@@ -44,7 +44,7 @@ const SingleCard = ({
 
         <div id="price" className="flex justify-between">
           {price && (
-            <p className="text-[#999]">Price <span className="block text-white font-semibold text-xl 2xl:text-2xl">${price}</span></p>
+            <p className="text-[#999]">Price <span className="block text-white font-semibold text-xl 2xl:text-2xl">${Number(price).toLocaleString('en-US', { minimumFractionDigits: 0, maximumFractionDigits: 0 })}</span></p>
 
           )}
           {Button && (
