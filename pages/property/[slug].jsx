@@ -46,7 +46,7 @@ const Property = ({ property }) => {
 
     );
 }
-
+export default Property;
 
 export async function getServerSideProps({ params }) {
     const { slug } = params;
@@ -61,4 +61,3 @@ export async function getServerSideProps({ params }) {
 
 }
 
-export default Property;

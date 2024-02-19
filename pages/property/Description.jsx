@@ -1,5 +1,5 @@
 
-export const Description = ({ description, beds, baths, area }) => {
+const Description = ({ description, beds, baths, area }) => {
     return (
         <section className="flex gap-12 flex-col w-full md:w-1/2 rounded-lg border border-[#262626] p-12">
             <div className="py-4 ">
@@ -27,3 +27,4 @@ export const Description = ({ description, beds, baths, area }) => {
 
     )
 }
+export default Description;
