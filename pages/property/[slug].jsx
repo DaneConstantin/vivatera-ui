@@ -7,7 +7,7 @@ import FAQSlider from '@/components/home/faq/FAQ';
 import SectionHeader from '@/components/SectionHeader';
 import ContactForm from '@/components/ContactForm';
 import KeyFeatures from './KeyFeatures';
-import { ComprehensiveDetails } from './ComprehensiveDetails';
+import ComprehensiveDetails from './ComprehensiveDetails';
 
 
 const Property = ({ property }) => {
