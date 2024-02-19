@@ -1,7 +1,7 @@
 import Container from '@/components/Container';
 import Layout from '../../components/Layout';
 import { fetcher } from '../../lib/api';
-import { Description } from './description';
+import { Description } from './Description';
 import { SwiperComp } from './SwiperComp';
 
 
