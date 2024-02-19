@@ -9,7 +9,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import 'swiper/css/thumbs';
 
-const SwiperComp = ({ photo }) => {
+const SwiperImages = ({ photo }) => {
     const [thumbsSwiper, setThumbsSwiper] = useState(0);
     return (
         <>
@@ -60,4 +60,4 @@ const SwiperComp = ({ photo }) => {
 
     )
 }
-export default SwiperComp;
+export default SwiperImages;

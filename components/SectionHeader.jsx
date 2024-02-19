@@ -46,19 +46,21 @@ const StarIcon = () => {
 
 const SectionHeader = ({ title, description, buttonTitle }) => {
     return (
-        <Container className="py-16 px-8 lg:px-0">
+        <Container className="flex flex-col py-16 px-8 lg:px-0 gap-4">
             <div className="starIcon">
                 <StarIcon />
             </div>
-            <h2 className="text-3xl font-semibold leading-loose xl:text-4xl xl:leading-loose 2xl:leading-loose 2xl:text-5xl">{title}</h2>
+            <h2 className="text-3xl font-semibold leading-normal xl:text-4xl xl:leading-normal 2xl:leading-normal 2xl:text-5xl">{title}</h2>
             <div className="flex justify-center md:justify-between items-end flex-col md:flex-row gap-4">
                 <p className="text-[#999] text-lg md:max-w-[75%]">{description}</p>
-                <Link
-                    href="/properties"
-                    target="_blank"
-                    rel="noopener">
-                    <span className="block text-sm py-4 px-5 border border-solid border-[#262626] rounded-lg bg-[#1A1A1A] hover:bg-[#1E1E1E] hover:border-[#1A1A1A]">{buttonTitle}</span>
-                </Link>
+                {buttonTitle &&
+                    <Link
+                        href="/properties"
+                        target="_blank"
+                        rel="noopener">
+                        <span className="block text-sm py-4 px-5 border border-solid border-[#262626] rounded-lg bg-[#1A1A1A] hover:bg-[#1E1E1E] hover:border-[#1A1A1A]">{buttonTitle}</span>
+                    </Link>
+                }
             </div>
 
         </Container>
