@@ -40,6 +40,10 @@ body {
 
 }
 
+main {
+  background-color: #141414;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
@@ -67,4 +71,17 @@ body {
     background-repeat: no-repeat;
     background-position: bottom left;
   }
+}
+
+.swiper-thumbs .swiper-wrapper {
+  padding: 10px;
+  max-height: 134px;
+}
+
+.swiper-thumbs .swiper-slide {
+  opacity: 0.5;
+}
+
+.swiper-thumbs .swiper-slide-thumb-active {
+  opacity: 1;
 }
