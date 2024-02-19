@@ -11,7 +11,7 @@ export const Logo = () => {
             <Link href="/">
                 <Image
                     className=" xl:h-[48px]"
-                    src="/vivaterra-logo.png"
+                    src="https://res.cloudinary.com/dfks8op0a/image/upload/v1708338011/VivaTerra/vivaTerra-logo_s5ccxg.png"
                     width={160}
                     height={48}
                     alt="VivaTerra Logo"
