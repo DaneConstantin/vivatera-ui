@@ -10,7 +10,7 @@ const MiniSection = ({ title, value, annotation }) => {
     )
 }
 
-export const ComprehensiveDetails = () => {
+const ComprehensiveDetails = () => {
     return (
         <Container>
             <SectionHeader title="Comprehensive Pricing Details" description="At Estatein, transparency is key. We want you to have a clear understanding of all costs associated with your property investment. Below, we break down the pricing for Seaside Serenity Villa to help you make an informed decision" />
@@ -72,3 +72,4 @@ export const ComprehensiveDetails = () => {
         </Container>
     )
 }
+export default ComprehensiveDetails;
