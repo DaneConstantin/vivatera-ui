@@ -25,7 +25,7 @@ const SwiperComp = ({ photo }) => {
                         return (
                             <SwiperSlide key={property.id}>
                                 <img
-                                    src={property.attributes.url}
+                                    src={`${property.attributes.url}`}
                                     alt=""
                                     className="w-full h-full object-cover aspect-w-10 aspect-h-23 rounded-lg cursor-pointer"
                                 />
@@ -47,7 +47,7 @@ const SwiperComp = ({ photo }) => {
                         return (
                             <SwiperSlide key={property.id}>
                                 <img
-                                    src={property.attributes.formats.thumbnail.url}
+                                    src={`${property.attributes.formats.thumbnail.url}`}
                                     alt=""
                                     className="object-cover rounded-lg h-[94px]  cursor-pointer"
                                 />

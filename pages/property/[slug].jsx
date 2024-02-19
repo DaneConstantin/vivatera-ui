@@ -1,8 +1,8 @@
 import Container from '@/components/Container';
 import Layout from '../../components/Layout';
 import { fetcher } from '../../lib/api';
-import { Description } from './Description';
-import { SwiperComp } from './SwiperComp';
+import Description from './Description';
+import SwiperComp from './SwiperComp';
 
 
 const Property = ({ property }) => {
