@@ -16,7 +16,7 @@ const Cards = ({ propertiesListed }) => {
             const serverImageUrl = Array.isArray(serverPhotos) && serverPhotos.length > 0
               ? serverPhotos[0]?.attributes?.url
               : null;
-            const serverImageUrl2 = `${process.env.NEXT_PUBLIC_STRAPI_URL}${serverImageUrl}`;
+            const serverImageUrl2 = `${serverImageUrl}`;
             const localImageUrl = `https://res.cloudinary.com/dfks8op0a/image/upload/v1708338024/VivaTerra/forSalePlaceholder_lacvd1.png`;
             const image = serverImageUrl !== null ? serverImageUrl2 : localImageUrl;
             return (
