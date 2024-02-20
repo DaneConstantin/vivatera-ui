@@ -3,6 +3,7 @@ import Cards from './Cards';
 import useSWR from "swr";
 import { useState, useEffect } from "react";
 import { IoMdArrowForward, IoMdArrowBack } from "react-icons/io";
+import LoadingSkeleton from "./LoadingSkeleton";
 
 export default function PropertiesSlider({ properties }) {
 
@@ -27,9 +28,12 @@ export default function PropertiesSlider({ properties }) {
     return (
 
         <section className="px-8 md:px-0 flex flex-col items-center justify-between pt-6 pb-20">
-
-            <Cards propertiesListed={data} />
-
+            {data ? (
+                <Cards propertiesListed={data} />
+            ) : (
+                <LoadingSkeleton />
+            )
+            }
 
             {/* pagination */}
             <div className="mt-8 border-t border-[#262626] w-full pt-4 flex justify-between">
@@ -66,7 +70,7 @@ export default function PropertiesSlider({ properties }) {
                 </div>
             </div>
 
-        </section>
+        </section >
 
     );
 }

@@ -52,7 +52,7 @@ export default function Nav() {
 
     return (
 
-        <div className="w-full bg-[#1A1A1A]">
+        <div className="w-full bg-[#1A1A1A] border-y border-[#262626]">
             <Container className="px-8 lg:px-0">
                 <nav
                     className={nav.navigation}>
