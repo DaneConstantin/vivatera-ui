@@ -97,7 +97,8 @@ main {
 }
 
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
 
   outline: solid 2px #703BF7;
 
@@ -108,4 +109,26 @@ input:focus, textarea:focus {
   height: 24px;
   width: 24px;
 
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: relative !important;
+}
+
+.swiper-button-disabled svg {
+  color: #999;
+  background-color: #141414;
+}
+
+.swiper-pagination-bullet {
+  margin: 3px !important;
+  border-radius: 0 !important;
+  width: 12px !important;
+  height: 3px !important;
+  background: #4D4D4D !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #703BF7 !important;
 }

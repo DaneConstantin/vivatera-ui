@@ -17,7 +17,7 @@ const Description = ({ description, beds, baths, area }) => {
 
                 </div>
                 <div className="w-full pl-5">
-                    <p className="text-[#999]">Area <span className="block text-white font-semibold text-xl 2xl:text-2xl">{area} Square Meters</span></p>
+                    <p className="text-[#999]">Area <span className="block text-white font-semibold text-xl 2xl:text-2xl">{area} m<sup>2</sup></span></p>
 
                 </div>
             </div>

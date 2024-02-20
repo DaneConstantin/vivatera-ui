@@ -20,8 +20,8 @@ const Property = ({ property }) => {
             <section className="w-full relative">
 
                 <Container className="px-4 lg:px-0 flex align-center w-full h-auto flex-col">
-                    <div className="flex justify-between w-full py-8">
-                        <h1 className="capitalize text-3xl xl:text-4xl 2xl:text-6xl font-semibold leading-normal xl:leading-relaxed 2xl:leading-relaxed break-keep">
+                    <div className="flex justify-between w-full py-8 mt-20">
+                        <h1 className="capitalize text-xl xl:text-2xl 2xl:text-3xl font-semibold leading-normal xl:leading-relaxed 2xl:leading-relaxed break-keep">
                             {property.attributes.name}
                         </h1>
 
@@ -32,7 +32,7 @@ const Property = ({ property }) => {
                             )}
                         </div>
                     </div>
-                    <div className="flex w-full h-full flex-col-reverse p-10 bg-[#1A1A1A] border border-[#262626] rounded-lg ">
+                    <div className="flex w-full h-full flex-col-reverse p-5 lg:p-10 bg-[#1A1A1A] border border-[#262626] rounded-lg ">
                         <SwiperComp photo={property.attributes.photos} />
                     </div>
                     <div className="flex flex-col md:flex-row justify-between my-8 gap-4">
