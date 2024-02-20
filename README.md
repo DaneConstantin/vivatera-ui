@@ -8,6 +8,13 @@ Leveraging the power of Next.js for seamless page navigation and Tailwind CSS fo
 https://vivaterra-ui.vercel.app/
 
 Back-end is deployed on Heroku. Contact me to gain access
+
+More info here: https://github.com/DaneConstantin/VivaTerra-backend
+
 ## Screenshots
 
 ### `Home`
+
+### `Property Details`
+
+### `Mobile`
