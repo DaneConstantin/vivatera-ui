@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { IoClose } from "react-icons/io5";
 import Image from 'next/image';
+import Link from 'next/link';
 
 const TopPopup = () => {
     const [isVisible, setIsVisible] = useState(true);
@@ -25,7 +26,7 @@ const TopPopup = () => {
                     <div className='relative top-0 w-full left-0 right-0'>
                         <div className="flex justify-between items-center">
                             <div></div>
-                            <p>✨Discover Your Dream Property with VivaTerra. <a className="underline" href="/properties">Learn More</a></p>
+                            <p>✨Discover Your Dream Property with VivaTerra. <Link className="underline" href="/properties">Learn More</Link></p>
 
                             <IoClose onClick={handleClose} className='bg-[#262626] rounded-full p-2 text-4xl cursor-pointer' />
 
