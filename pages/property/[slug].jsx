@@ -2,7 +2,7 @@ import Container from '@/components/Container';
 import Layout from '../../components/Layout';
 import { fetcher } from '../../lib/api';
 import Description from './Description';
-import SwiperComp from './SwiperImages';
+import SwiperImages from './SwiperImages';
 import FAQSlider from '@/components/home/faq/FAQ';
 import SectionHeader from '@/components/SectionHeader';
 import ContactForm from '@/components/ContactForm';
@@ -33,7 +33,7 @@ const Property = ({ property }) => {
                         </div>
                     </div>
                     <div className="flex w-full h-full flex-col-reverse p-5 lg:p-10 bg-[#1A1A1A] border border-[#262626] rounded-lg ">
-                        <SwiperComp photo={property.attributes.photos} />
+                        <SwiperImages photo={property.attributes.photos} />
                     </div>
                     <div className="flex flex-col md:flex-row justify-between my-8 gap-4">
                         <Description description={property.attributes.description} beds={property.attributes.bedrooms} baths={property.attributes.bathrooms} area={property.attributes.m2} />

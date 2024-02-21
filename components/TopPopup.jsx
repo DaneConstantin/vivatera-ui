@@ -13,13 +13,13 @@ const TopPopup = () => {
     return (
         <>
             {isVisible && (
-                <div className="relative top-0 left-0 right-0 p-3 bg-[#1A1A1A] text-white text-center overflow-hidden">
+                <div className="relative top-0 left-0 right-0 p-3 bg-[#1A1A1A] text-white text-center overflow-hidden w-full">
                     <div className='absolute top-0 right-0 left-0 w-full h-[60px]'>
                         <Image
-                            src="/rrrepeat.svg" // Replace with the path to your image
+                            src="/rrrepeat.svg"
                             alt="Abstract Texture"
-                            layout='fill'
-                            objectFit='cover'
+                            fill
+                            style={{ objectFit: "cover" }}
 
                         />
                     </div>

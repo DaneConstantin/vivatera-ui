@@ -1,11 +1,10 @@
 import Link from "next/link";
-import styles from "./categoryList.module.css";
 import Category from "./Category";
 import { DreamHome, SmartInvest, PropertyValue, PropertyManagement } from "./categoriesIcons";
 
 export default function Services() {
     return (
-        <section className={styles.main}>
+        <section className="w-full">
             <div className="grid grid-cols-2 gap-5 lg:grid-cols-4 border-[10px] border-[#1A1A1A] p-5 items-center">
                 <Link className="flex flex-col h-full" href="/properties">
                     <Category name="Find Your Dream Home" icon={<DreamHome />} />

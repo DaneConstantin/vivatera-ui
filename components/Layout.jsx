@@ -14,7 +14,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <>
-      <main className={inter.className}>
+      <main className={`${inter.className} flex min-h-screen flex-col items-center`}>
         <TopPopup />
         <Nav />
         {children}

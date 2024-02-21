@@ -8,9 +8,6 @@ import FAQSlider from '@/components/home/faq/FAQ';
 export default function Home() {
   return (
     <Layout>
-
-      <main className="flex min-h-screen flex-col items-center">
-
         <Hero />
         <Services />
         <section className="container">
@@ -19,7 +16,6 @@ export default function Home() {
           <SectionHeader title="Frequently Asked Questions" description="Find answers to common questions about VivaTerra&apos;s services, property listings, and the real estate process. We&apos;re here to provide clarity and assist you every step of the way." buttonTitle="View All FAQ&apos;s" />
           <FAQSlider />
         </section>
-      </main>
     </Layout>
   );
 }

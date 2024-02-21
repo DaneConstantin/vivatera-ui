@@ -15,7 +15,7 @@ export default function PropertiesList({ properties }) {
         <Layout>
             <main className="flex flex-col items-center justify-between py-24">
 
-                <h1>List of Properties for sale</h1>
+                <h1 className="capitalize mb-8 text-3xl text-dark xl:text-4xl 2xl:text-6xl font-semibold leading-normal xl:leading-relaxed 2xl:leading-relaxed text-center 2xl:text-left">List of Properties for sale</h1>
                 <Cards propertiesListed={data} />
 
             </main>
