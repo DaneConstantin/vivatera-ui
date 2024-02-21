@@ -14,7 +14,7 @@ const BlockNumber = ({ number, title }) => {
 
 const HeroPhoto = () => {
   return (
-    <div className="relative min-h-[420px] sm:min-h-[500px] w-[80%] mx-auto md:min-h-[600px] lg:w-[90%] mt-8 lg:mt-0 lg:mr-0">
+    <div className="relative min-h-[420px] sm:min-h-[500px] w-[80%] mx-auto md:min-h-[600px] lg:w-[90%] my-8 lg:mt-0 lg:mr-0">
       <Image
         src="/heroimg.png"
         fill
@@ -28,9 +28,6 @@ export default function Hero() {
   return (
 
     <section className="w-full relative">
-      <div className="hidden lg:block absolute left-0 w-[calc(50%+45px)] h-full bg-[#141414]"></div>
-      <div className="hidden lg:block absolute right-0 w-[calc(50%-45px)] h-full bg-gradient-to-bl from-[#2A213F] from-10% to-50% to-[#1A1A1A]"></div>
-
       <Container className="px-4 lg:px-0 flex align-center w-full h-auto flex-col-reverse lg:flex-row">
         <div className="flex items-center xl:items-start justify-center w-full xl:w-1/2 flex-col py-8 xl:py-20 z-10 mx-auto">
           <h1 className="capitalize mb-4 text-3xl text-dark xl:text-4xl 2xl:text-6xl font-semibold leading-normal xl:leading-relaxed 2xl:leading-relaxed text-center 2xl:text-left">
