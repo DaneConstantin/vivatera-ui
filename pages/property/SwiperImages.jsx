@@ -14,7 +14,7 @@ import Image from 'next/image';
 const SwiperImages = ({ photo }) => {
     const [thumbsSwiper, setThumbsSwiper] = useState(0);
     return (
-        <>{photo.data ? (
+        <>{photo.data !== null ? (
             <>
                 <div className="flex w-full md:max-w-[300px] bg-[#141414] rounded-full border border-[#262626] p-2 mx-auto items-center">
                     <button className="prev bg-[#1A1A1A] rounded-full"><GoArrowLeft className="text-5xl lg:text-6xl border border-[#262626] rounded-full p-2 lg:p-3" /></button>
