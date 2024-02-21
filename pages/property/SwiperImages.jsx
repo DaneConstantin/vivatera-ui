@@ -13,7 +13,7 @@ import Image from 'next/image';
 
 const SwiperImages = ({ photo }) => {
     const [thumbsSwiper, setThumbsSwiper] = useState(0);
-    const photosToMap = photo.data || [];
+    const photosToMap = photo && photo.data ? photo.data : [];
     return (
         <>{photosToMap ? (
             <>
