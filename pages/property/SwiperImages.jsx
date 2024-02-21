@@ -13,8 +13,9 @@ import Image from 'next/image';
 
 const SwiperImages = ({ photo }) => {
     const [thumbsSwiper, setThumbsSwiper] = useState(0);
+    const photosToMap = photo.data || [];
     return (
-        <>{photo.data !== null ? (
+        <>{photosToMap ? (
             <>
                 <div className="flex w-full md:max-w-[300px] bg-[#141414] rounded-full border border-[#262626] p-2 mx-auto items-center">
                     <button className="prev bg-[#1A1A1A] rounded-full"><GoArrowLeft className="text-5xl lg:text-6xl border border-[#262626] rounded-full p-2 lg:p-3" /></button>
@@ -43,7 +44,7 @@ const SwiperImages = ({ photo }) => {
                     }}
                     className="flex w-full h-full min-h-[250px] my-6"
                 >
-                    {photo.data.map((property) => {
+                    {photosToMap.map((property) => {
 
                         return (
                             <SwiperSlide key={property.id} >
@@ -82,7 +83,7 @@ const SwiperImages = ({ photo }) => {
                     spaceBetween={10}
                     className="flex w-full bg-[#141414] rounded-lg border border-[#262626]"
                 >
-                    {photo.data.map((property) => {
+                    {photosToMap.map((property) => {
                         return (
                             <SwiperSlide key={property.id}>
                                 <div className="relative overflow-hidden aspect-ratio-video h-[62px] md:h-[94px]">
