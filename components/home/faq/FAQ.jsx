@@ -80,7 +80,7 @@ export async function getStaticProps() {
     const getQuestions = await fetcher(
         `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/properties?pagination[page]=1&pagination[pageSize]=${pageSize}&populate=*`
     );
-    console.log(getQuestions);
+    
     return {
         props: {
             questions: getQuestions,

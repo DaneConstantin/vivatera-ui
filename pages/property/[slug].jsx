@@ -13,8 +13,6 @@ import ComprehensiveDetails from './ComprehensiveDetails';
 const Property = ({ property }) => {
     const price = property.attributes.price;
 
-
-
     return (
         <Layout>
             <section className="w-full relative">
@@ -27,7 +25,7 @@ const Property = ({ property }) => {
 
                         <div className="flex flex-wrap flex-col gap-5 ">
                             {price && (
-                                <p className="text-[#999]">Price <span className="block text-white font-semibold text-xl 2xl:text-2xl">${Number(price).toLocaleString('en-US', { minimumFractionDigits: 0, maximumFractionDigits: 0 })}</span></p>
+                                <p className="text-[#999]">Price <span className="block font-semibold text-xl 2xl:text-2xl">${Number(price).toLocaleString('en-US', { minimumFractionDigits: 0, maximumFractionDigits: 0 })}</span></p>
 
                             )}
                         </div>
