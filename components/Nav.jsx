@@ -9,14 +9,15 @@ import { useState, useEffect } from 'react';
 
 export const Logo = () => {
     return (
-        <div>
+        <div className='w-[120px] md:w-[140px]'>
             <Link href="/">
                 <Image
-                    className=" xl:h-[48px]"
+                    
                     src="https://res.cloudinary.com/dfks8op0a/image/upload/v1708338011/VivaTerra/vivaTerra-logo_s5ccxg.png"
-                    width={160}
-                    height={48}
+                    width={140}
+                    height={0}
                     alt="VivaTerra Logo"
+                    style={{ width: "100%", height: "auto" }}
                 />
             </Link>
         </div>

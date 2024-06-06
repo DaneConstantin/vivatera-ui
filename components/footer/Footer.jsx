@@ -3,6 +3,7 @@ import Container from "../Container";
 import { Logo } from "../Nav";
 import { FaTelegramPlane } from "react-icons/fa";
 import { SocialIcons } from "./SocialIcons";
+import Link from "next/link";
 
 const Footer = () => {
     return (
@@ -85,12 +86,12 @@ const LinkGroup = ({ children, header }) => {
 const NavLink = ({ link, label }) => {
     return (
         <li>
-            <a
+            <Link
                 href={link}
-                className="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6"
+                className="inline-block text-base leading-loose hover:text-[#cacaca]"
             >
                 {label}
-            </a>
+            </Link>
         </li>
     );
 };

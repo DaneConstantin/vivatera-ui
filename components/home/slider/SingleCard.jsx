@@ -2,6 +2,7 @@ import { IoBed } from "react-icons/io5";
 import { FaBath } from "react-icons/fa";
 import { HiMiniBuildingOffice } from "react-icons/hi2";
 import Link from "next/link";
+import Image from "next/image";
 
 const SingleCard = ({
   image,
@@ -19,22 +20,26 @@ const SingleCard = ({
     <>
 
       <div className="rounded-lg p-5 md:p-7 lg:p-8 xl:p-10 flex flex-col gap-4 md:gap-6 xl:gap-8 min-h-full justify-between">
-        <img
-          src={image}
-          alt=""
-          className="w-full h-full object-cover aspect-w-10 aspect-h-23 rounded-xl"
+        <Link href={titleHref ? titleHref : "/#"} className="w-full h-[300px] relative">
+          <Image
+            src={image}
+            alt=""
+            fill
+            objectFit="cover"
+            className=" rounded-xl"
+          />
+        </Link>
 
-        />
 
         <div id="property-main-info" className="text-left">
-          <h3>
-            <a
-              href={titleHref ? titleHref : "/#"}
-              className="mb-1 block text-xl font-semibold text-dark hover:text-primary text-white sm:text-[22px] md:text-xl lg:text-[22px] xl:text-xl 2xl:text-[22px]"
-            >
-              {CardTitle}
-            </a>
-          </h3>
+
+          <Link
+            href={titleHref ? titleHref : "/#"}
+            className="mb-1 block text-xl font-semibold hover:text-[#cacaca]  sm:text-[22px] md:text-xl lg:text-[22px] xl:text-xl 2xl:text-[22px]"
+          >
+            {CardTitle}
+          </Link>
+
           <p className="text-base leading-normal text-[#999]">
             {CardDescription}
           </p>
@@ -44,7 +49,7 @@ const SingleCard = ({
 
         <div id="price" className="flex justify-between">
           {price && (
-            <p className="text-[#999]">Price <span className="block text-white font-semibold text-xl 2xl:text-2xl">${Number(price).toLocaleString('en-US', { minimumFractionDigits: 0, maximumFractionDigits: 0 })}</span></p>
+            <p className="text-[#999]">Price <span className="block text-[#ededed] font-semibold text-xl 2xl:text-2xl">${Number(price).toLocaleString('en-US', { minimumFractionDigits: 0, maximumFractionDigits: 0 })}</span></p>
 
           )}
           {Button && (

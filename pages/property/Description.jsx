@@ -3,7 +3,7 @@ const Description = ({ description, beds, baths, area }) => {
     return (
         <section className="flex h-full flex-col w-full md:w-1/2 rounded-lg border border-[#262626] px-12 divide-y divide-[#262626]">
             <div className="py-8">
-                <h3 className="py-2 text-xl font-semibold">Description</h3>
+                <h3 className="py-2 text-xl font-semibold  ">Description</h3>
                 <p className="text-[#999]">{description}</p>
             </div>
             <div className="flex w-full gap-5 divide-x divide-[#262626] py-5">

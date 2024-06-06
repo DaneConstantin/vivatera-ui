@@ -9,7 +9,7 @@ const Category = ({ name,  icon }) => {
                 {icon}
             </div>
             
-            <h1 className={styles.title}>{name}</h1>
+            <h3 className={styles.title}>{name}</h3>
            
 
 
